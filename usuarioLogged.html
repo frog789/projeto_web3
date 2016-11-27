@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UserPage</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type = "text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="divcontent.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse">
+			<a class="navbar-brand">MySíndico</a>
+			<ul  style="padding-top: 5px; padding-right: 15px; float: right;" class = "nav navbar-nav">
+				<li class = "nav-item">
+	  				<input class = "form-control" placeholder = "Digite sua pesquisa..." />
+	  			</li>
+	  	
+	  			<li class = "nav-item" style = "position: center;padding-left: 5px;">	
+	  				<button class="btn btn-primary" style="position: center;"><span class = "fa fa-search"></span>&nbsp;Pesquisar</button>
+	  			</li>
+				<li class="btn-group" style="padding-left: 20px;">
+					<button class="btn btn-dropdown-toggle" data-toggle="dropdown">
+					<span class = "fa fa-user-circle"></span>&nbsp;USERNAME <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+						<li><a href="#" value="news" onclick="changeDivContent()">Noticias</a></li>
+						<li><a href="#">Boletos</a></li>
+						<li><a href="#">Reservas</a></li>
+						<li><a href="#">Documentos</a></li>
+						<li><a href="#">Opções</a></li>
+						<li class="divider"></li>
+						<li><a class="fa fa-sign-out" href="#">&nbsp;Log-Out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="container" class="container"></div>
+
+		<footer class="footer">
+			<ul class="list-inline ul-footer icons">
+            	<li><a href="#" class="fa fa-twitter"></a></li>
+            	<li><a href="#" class="fa fa-facebook"></a></li>
+            	<li><a href="#" class="fa fa-linkedin"></a></li>
+            	<li><a href="#" class="fa alt fa-instagram"></a></li>
+            	<li><a href="#" class="fa alt fa-github"></a></li>
+            	<li><a href="#" class="fa alt fa-envelope"></a></li>
+        	</ul>
+        	<ul class="list-inline ul-footer">
+            	<li style = "padding-bottom: 2%;">&copy; FFDevelopment. All rights reserved.</li><li>Design:<a href="http://www.ffdevelopment.net">FFDevelopment</a></li>
+        	</ul>
+    	</footer>
+	</body>
+</html>
